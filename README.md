@@ -41,5 +41,5 @@ You can install this ROM using either Fastboot or TWRP. Download the respective 
 5. Reboot your device.
 
 ## Credits
-- Project maintained by **kiberrrxx**.
-- Thanks to the open-source community.
+- Project maintained by **kiberrrxx & elaann.
+- Thanks to Jbub5 for the kernel source code.
