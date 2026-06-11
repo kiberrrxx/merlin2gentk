@@ -17,6 +17,10 @@ This project brings a barebone, highly optimized Gentoo Linux environment to the
 
 ## Installation
 
+## Requirements
+- **Engineering Firmware:** You MUST flash this firmware before installing the ROM to ensure hardware compatibility.
+- [Download Engineering FW](https://drive.google.com/file/d/1qVk-ygzGT0aP_hCX9CjnQjlwn6EoJ8kX/view?pli=1)
+
 You can install this ROM using either Fastboot or TWRP. Download the respective archive from the [Releases](../../releases) tab.
 
 ### Method 1: Fastboot (For PC)
