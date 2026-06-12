@@ -1,45 +1,90 @@
-# merlin2gentk (Gentoo Linux for Redmi Note 9)
+[README.md](https://github.com/user-attachments/files/28885608/README.md)
+<div align="center">
+  <a href="https://www.reddit.com/r/Gentoo/comments/kiyemu/if_gentoo_logo_look_so_outdated_why_did_does_not/">
+    <img src="assets/CWmDvMA.png" width="70" alt="gentk logo">
+  </a>
+  <br>
+  <strong>merlin2gentk</strong>
+  <p>Unofficial Gentoo Linux port for Xiaomi Redmi Note 9 (merlin) [aarch64]</p>
+</div>
 
-A lightweight, fully functional Gentoo Linux custom ROM for the Xiaomi Redmi Note 9 (merlin).
+## 
 
-⚠️ **DISCLAIMER:** Flashing custom operating systems can brick your device. I am not responsible for dead SD cards, bricked phones, or lost data. Do this at your own risk!
-
-## Overview
-This project brings a barebone, highly optimized Gentoo Linux environment to the MTK-based Redmi Note 9. The graphical user interface (KDE/X11) has been intentionally stripped out to save resources, making it an ideal pocket server or a base for embedded Linux experiments. The uncompressed rootfs is around 4GB.
-
-## Features
-- **Linux Kernel 4.14** booting smoothly via OpenRC.
-- **Working Display:** framebuffer is set
-- **Working Wi-Fi:** Automatically initialized at boot via a modified `wmt-pyloader` script.
-- **Working USB Networking (RNDIS):** Plug into your PC and connect instantly.
-- **SSH Ready:** Pre-configured and ready to accept connections out of the box.
-- **Custom Boot Logo:** Completely custom boot logo.
+## Images
 
 ## Installation
 
-## Requirements
-- **Engineering Firmware:** You MUST flash this firmware before installing the ROM to ensure hardware compatibility.
-- [Download Engineering FW](https://drive.google.com/file/d/1qVk-ygzGT0aP_hCX9CjnQjlwn6EoJ8kX/view?pli=1)
+### Requirements:
+* The phone itself with an unlocked bootloader.
+* A computer (host machine) with a Linux system.
+* Data USB cable (***D+*** and ***D-***).
+* Before firmware, it is advisable to flash MIUI 13.x.x.x (R Vendor)
 
-You can install this ROM using either Fastboot or TWRP. Download the respective archive from the [Releases](../../releases) tab.
+### Preparation:
 
-### Method 1: Fastboot (For PC)
-1. Extract `merlin2gentk-fastboot.zip` on your computer.
-2. Reboot your phone into **Fastboot Mode** (Volume Down + Power).
-3. Connect the phone to your PC via a USB cable.
-4. Run the installer script:
-  - On Linux: `bash install.sh`
-  - *(Or manually flash the provided `.img` and `.bin` files).*
-5. Wait for the userdata partition to be flashed (it takes a few minutes).
-6. Reboot and enjoy.
+## FOR FASTBOOT
 
-### Method 2: TWRP Recovery (For SD Card)
-1. Copy `merlin2gentk-twrp.zip` to your SD card or USB OTG.
-2. Reboot your phone into TWRP recovery.
-3. Tap **Install** and select the ZIP file.
-4. Follow the interactive on-screen instructions (you will need to confirm the userdata wipe by pressing the **Volume Up** button).
-5. Reboot your device.
+1. Install ADB & Fastboot tools on the host machine:
+```sh
+pacman -S android-tools # arch/arch based
+emerge dev-util/android-tools # gentoo
+apt install adb fastboot # debian/debian based
+# ... on other distributions try the packages `android-tools`, `adb`, `fastboot`
+```
+
+2. Check the versions:
+```sh
+fastboot --version
+adb --version
+```
+
+3. Make sure your user is in the plugdev group:
+```sh
+groups
+```
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;If not, add them to this group and re-login to the system
+```sh
+usermod -aG plugdev $USER
+```
+
+4. Make sure the device is charged to at least 25%.
+
+### Flashing:
+Extract the firmware archive. Inside there should be the files: `boot.img`, `logo.bin`, `userdata.img`, `vbmeta.img` and the install.sh setup script.
+
+1. Connect the device to the computer in fastboot mode. Check if the computer sees it using the command:
+```sh
+fastboot devices
+```
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The output should look something like this:
+```
+1234567890ABCBD         fastboot
+```
+2. Run the installation script:
+```sh
+./install.sh
+```
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;If you get a Permission denied error, give the script execution permissions and run it again:
+```sh
+chmod +x install.sh
+./install.sh
+```
+3. Follow the instructions in the script.
+
+## FOR TWRP
+
+1. Reboot into Recovery mode (TWRP)
+
+2. Put the TWRP installer in your phone's internal memory/external storage
+
+3. Install the firmware.
+
+4. Reboot to Gentoo.
 
 ## Credits
-- Project maintained by **kiberrrxx & elaann.
-- Thanks to Jbub5 for the kernel source code.
+* **Kernel and logo.bin:** kiberrrxx
+* **Stage3:** gentoo
+* **Guide and idea:** elaann
+
+🐧🐧🐧🐧🐧🐧🐧🐧
