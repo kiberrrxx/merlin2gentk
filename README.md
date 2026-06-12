@@ -87,6 +87,11 @@ chmod +x install.sh
 
 4. Reboot into `Gentoo`.
 
+## Passwords from users
+
+'root: kib10'
+'user: user1234'
+
 ## Credits
 * **Kernel and logo.bin:** kiberrrxx
 * **Stage3:** gentoo
