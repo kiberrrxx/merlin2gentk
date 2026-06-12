@@ -11,6 +11,12 @@
 
 ## Images
 
+<p align="center">
+ <img src="https://github.com/user-attachments/assets/64cf705b-00d0-4f98-9eae-a5c32dcbf3f6" width="32%" alt="Gentoo Fastfetch 1" />
+ <img src="https://github.com/user-attachments/assets/8093644a-5004-4806-9c5e-c50046d505d0" width="32%" alt="Gentoo Fastfetch 2" />
+ <img src="https://github.com/user-attachments/assets/76eabae7-b735-4d43-a622-8d4f69f12844" width="32%" alt="Gentoo Fastfetch 3" />
+</p>
+
 ## Installation
 
 ### Requirements:
