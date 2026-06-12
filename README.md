@@ -7,10 +7,9 @@
  <p>Unofficial Gentoo Linux port for Xiaomi Redmi Note 9 (merlin) [aarch64]</p>
 </div>
 
-## 
+##
 
 ## Images
-
 
 <p align="center">
  <img src="https://github.com/user-attachments/assets/64cf705b-00d0-4f98-9eae-a5c32dcbf3f6" width="32%" alt="Gentoo Fastfetch 1" />
@@ -24,7 +23,7 @@
 * The phone itself with an unlocked bootloader.
 * A computer (host machine) with a Linux system.
 * Data USB cable (***D+*** and ***D-***).
-* Before firmware, it is advisable to flash MIUI 13.x.x.x (R Vendor)
+* It is recommended to update to MIUI 13.x.x.x (R Vendor) before flashing.
 
 ### Preparation:
 
@@ -35,7 +34,7 @@
 pacman -S android-tools # arch/arch based
 emerge dev-util/android-tools # gentoo
 apt install adb fastboot # debian/debian based
-# ... on other distributions try the packages `android-tools`, `adb`, `fastboot`
+# ... on other distributions, look for packages such as `android-tools`, `adb`, and `fastboot`
 ```
 
 2. Check the versions:
@@ -57,7 +56,7 @@ usermod -aG plugdev $USER
 4. Make sure the device is charged to at least 25%.
 
 ### Flashing:
-Extract the firmware archive. Inside there should be the files: `boot.img`, `logo.bin`, `userdata.img`, `vbmeta.img` and the install.sh setup script.
+Extract the firmware archive. Inside there should be the files: `boot.img`, `logo.bin`, `userdata.img`, `vbmeta.img` and the `install.sh` setup script.
 
 1. Connect the device to the computer in fastboot mode. Check if the computer sees it using the command:
 ```sh
@@ -80,17 +79,17 @@ chmod +x install.sh
 
 ## FOR TWRP
 
-1. Reboot into Recovery mode (TWRP)
+1. Reboot into `TWRP` (or any custom recovery).
 
-2. Put the TWRP installer in your phone's internal memory/external storage
+2. Copy the installation pkg to your phone's internal memory/external storage
 
-3. Install the firmware by following the instructions on the TWRP screen.
+3. Flash the package by following the instructions shown in the recovery.
 
-4. Reboot to Gentoo.
+4. Reboot into `Gentoo`.
 
 ## Credits
 * **Kernel and logo.bin:** kiberrrxx
 * **Stage3:** gentoo
-* **Guide and idea:** elaann
+* **Guide and idea:** [elaann](https://github.com/xewvvi)
 
 🐧🐧🐧🐧🐧🐧🐧🐧
