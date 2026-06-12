@@ -23,7 +23,7 @@
 * The phone itself with an unlocked bootloader.
 * A computer (host machine) with a Linux system.
 * Data USB cable (***D+*** and ***D-***).
-* Before firmware, it is advisable to flash MIUI 13.x.x.x (R Vendor)
+* It is recommended to update to MIUI 13.x.x.x (R Vendor) before flashing.
 
 ### Preparation:
 
