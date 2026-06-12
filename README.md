@@ -77,7 +77,7 @@ chmod +x install.sh
 
 2. Put the TWRP installer in your phone's internal memory/external storage
 
-3. Install the firmware.
+3. Install the firmware by following the instructions on the TWRP screen.
 
 4. Reboot to Gentoo.
 
