@@ -90,7 +90,7 @@ chmod +x install.sh
 ## Passwords from users
 
 root: kib10
-user: user1234'
+user: user1234
 
 ## Credits
 * **Kernel and logo.bin:** kiberrrxx
