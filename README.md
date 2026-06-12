@@ -1,11 +1,10 @@
-[README.md](https://github.com/user-attachments/files/28885608/README.md)
 <div align="center">
-  <a href="https://www.reddit.com/r/Gentoo/comments/kiyemu/if_gentoo_logo_look_so_outdated_why_did_does_not/">
-    <img src="assets/CWmDvMA.png" width="70" alt="gentk logo">
-  </a>
-  <br>
-  <strong>merlin2gentk</strong>
-  <p>Unofficial Gentoo Linux port for Xiaomi Redmi Note 9 (merlin) [aarch64]</p>
+ <a href="https://www.reddit.com/r/Gentoo/comments/kiyemu/if_gentoo_logo_look_so_outdated_why_did_does_not/">
+  <img src="https://i.imgur.com/CWmDvMA.png" width="70" alt="">
+ </a>
+ <br>
+ <strong>merlin2gentk</strong>
+ <p>Unofficial Gentoo Linux port for Xiaomi Redmi Note 9 (merlin) [aarch64]</p>
 </div>
 
 ## 
