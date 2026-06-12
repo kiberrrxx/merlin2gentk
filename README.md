@@ -8,7 +8,9 @@
 </div>
 
 ## 
+
 ## Images
+
 
 <p align="center">
  <img src="https://github.com/user-attachments/assets/64cf705b-00d0-4f98-9eae-a5c32dcbf3f6" width="32%" alt="Gentoo Fastfetch 1" />
