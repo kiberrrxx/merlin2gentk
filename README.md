@@ -23,7 +23,7 @@
 * The phone itself with an unlocked bootloader.
 * A computer (host machine) with a Linux system.
 * Data USB cable (***D+*** and ***D-***).
-* It is recommended to update to (Q Vendor) before flashing.
+* It is recommended to update to Q Vendor before flashing.
 
 ### Preparation:
 
