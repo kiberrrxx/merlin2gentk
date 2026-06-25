@@ -56,7 +56,7 @@ usermod -aG plugdev $USER
 4. Make sure the device is charged to at least 25%.
 
 ### Flashing:
-Extract the firmware archive. Inside there should be the files: `boot.img`, `logo.bin`, `userdata.img`, `vbmeta.img` and the `install.sh` setup script.
+Extract the firmware archive. Inside there should be the files: `boot.img`, `logo.bin`, `rootfs.img`, `vbmeta.img` and the `install.sh` setup script.
 
 1. Connect the device to the computer in fastboot mode. Check if the computer sees it using the command:
 ```sh
