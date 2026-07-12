@@ -120,3 +120,5 @@ Extract the firmware archive. It should contain: `boot.img`, `logo.bin`, `userda
 | Kernel & `logo.bin` | [kiberrrxx](https://github.com/kiberrrxx) |
 | Stage3 base | [Gentoo](https://gentoo.org/) |
 | Guide & idea | [xewvvi](https://github.com/xewvvi) |
+
+🐧🐧🐧🐧🐧🐧🐧🐧
