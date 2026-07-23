@@ -30,12 +30,11 @@ No desktop environment is included by default, making it suitable as a pocket se
 
 ## Installation
 
-### Requirements
-
-- The phone itself with an **unlocked bootloader**.
-- A computer (host machine) running **Linux**.
-- A USB data cable (with ***D+*** and ***D−*** lines).
-- It is recommended to update to Q Vendor before flashing.
+### Requirements:
+* The phone itself with an unlocked bootloader.
+* A computer (host machine) with a Linux system.
+* Data USB cable (***D+*** and ***D-***).
+* It is recommended to update to Q Vendor before flashing.
 
 ### Download
 
@@ -77,7 +76,8 @@ usermod -aG plugdev $USER
 
 #### 4. Charge the device
 
-Make sure the device is charged to **at least 25%**.
+### Flashing:
+Extract the firmware archive. Inside there should be the files: `boot.img`, `logo.bin`, `rootfs.img`, `vbmeta.img` and the `install.sh` setup script.
 
 #### 5. Flash
 
@@ -112,6 +112,12 @@ Extract the firmware archive. It should contain: `boot.img`, `logo.bin`, `userda
 2. Copy the installation package to internal storage or an SD card.
 3. Flash the package following the recovery instructions.
 4. Reboot into **Gentoo**.
+
+## Passwords from users
+
+root: kib10
+
+user: user1234
 
 ## Credits
 
